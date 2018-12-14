@@ -47,7 +47,6 @@ IBM Digital App Studio requires the following software pre-installed:
     $npm -v
     6.4.1
     ```
-    {: codeblock}
 
 2. Install **Cordova** and **ionic**
 
@@ -58,7 +57,6 @@ IBM Digital App Studio requires the following software pre-installed:
     $ ionic –version
     4.2.0
     ```
-    {: codeblock}
 
 3. [Download](https://github.ibm.com/MobileFirst/mfp-rapidapp/releases) the Digital App Studio installation file (**IBM.Digital.App.Studio-0.xx.0-mac.zip**) and extract the contents.
 4. Double click the Studio executable to open the Studio.
