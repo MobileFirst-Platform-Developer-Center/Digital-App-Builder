@@ -58,7 +58,7 @@ IBM Digital App Studio requires the following software pre-installed:
     4.2.0
     ```
 
-3. [Download](https://github.ibm.com/MobileFirst/mfp-rapidapp/releases) the Digital App Studio installation file (**IBM.Digital.App.Studio-0.xx.0-mac.zip**) and extract the contents.
+3. [Download](https://github.com/MobileFirst-Platform-Developer-Center/Digital-App-Studio/releases) the Digital App Studio installation file (**IBM.Digital.App.Studio-0.44.0-mac.zip**) and extract the contents.
 4. Double click the Studio executable to open the Studio.
 
     >**Note**: To preview the App on iOS, download and install **XCode** from Apple App Store.
