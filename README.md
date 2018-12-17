@@ -330,8 +330,7 @@ After previewing your application and if it is ready for deploying, after rectif
 # Debugging known issues
 
 * In case of any error, refer to the `log.log` file for the respective platform folder path below:
-    * On Linux: `~/.config/<app name>/log.log`.
-    * On OS X: `~/Library/Logs/<app name>/log.log`.
+    * On mac OS: `~/Library/Logs/<app name>/log.log`.
     * On Windows: `%USERPROFILE%\AppData\Roaming\<app name>\log.log`.
 
 # FAQ
