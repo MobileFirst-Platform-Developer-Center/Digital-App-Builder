@@ -115,7 +115,7 @@ Before started to use the Digital App Builder, a prerequisites check will check 
 
 Perform a prerequisite check by selecting **Help > Prerequisites Check** before developing an application.
 
-![Prerequisites Check](images/idab-pre-reqs-check.jpg)
+![Prerequisites Check](images/idab-pre-reqs-check.png)
 
 In case of any error, rectify the error and restart the Digital App Builder before creating the mobile application.
 
@@ -127,32 +127,32 @@ You can create a new Mobile Application by clicking **Create new app** icon from
 
 1. Click **Create new app** icon. This displays the **Select Channel** window.
 
-    ![Select Channel](images/idab-select-channel.jpg)
+    ![Select Channel](images/idab-select-channel.png)
 
 2. Select the channel for which you want to develop and deploy the application, by double clicking the respective icon. The **Select type of server to connect to** window is displayed.
 
-    ![Select type of server](images/idab-select-server.jpg)
+    ![Select type of server](images/idab-select-server.png)
 
 3. You can select a **Shared Playground Server** or a **Custom Professional Server**.
     * **Shared Playground Server** – a shared server to get you started quickly to build an application. On selecting the Shared Playground Server displays the **Configure IBM Cloud instance** screen.
 
-        ![IBM Cloud login](images/idab-ibmidlogin.jpg)
+        ![IBM Cloud login](images/idab-ibmidlogin.png)
 
-        Enter the IBM Cloud access details (**IBM Cloud Username**, and **IBM Cloud Password**). 
+        Enter the **IBM Cloud API Key**. For more details access details refer to How to create a **Platform API Keys**. 
 
         Click **Login** to connect to the server. On successful login displays the **Create App** window where you can select a shared server and enter the details of the new application. Enter the details of the new application: **Name** of the appliation, **Location**, **Project/Bundle Id**, and **Version** of the application. 
  
-        ![Shared Playground Server](images/idab-shared-playground-server.jpg)
+        ![Shared Playground Server](images/idab-shared-playground-server.png)
 
         Click **Create** to create a new application.
 
     * **Custom Professional Server** – You can connect to a custom server either created on IBM Cloud or locally. The **Configure IBM Cloud instance** window is displayed wherein you can either select an existing server or click to **Create New Server** link.
 
-        ![Configure IBM Cloud instance](images/idab-config-ibm-cloud-instance.jpg)
+        ![Configure IBM Cloud instance](images/idab-config-ibm-cloud-instance.png)
  
 4. The **Configure IBM Cloud instance** window displays the list of Mobile Foundation server instances, if any exists, in your IBM Cloud account. You can also search for a server in your cloud instance and select. On selection, the **Server Name**, **MFP Server url**, **Admin User Name**, **Password**, is displayed. If no server exists, you can **Create New Server** instance by clicking the **Create New Server** link. This will display the new **Configure IBM Cloud instance** window.
 
-    ![Create New Server](images/idab-new-server.jpg)
+    ![Create New Server](images/idab-new-server.png)
 
 5. Enter the new IBM Cloud instance details, like **Server name**, **Mobile Foundation server url**, **Admin User name**, **Password**, **Confidential client name** (optional) information, and **Password**.
  
@@ -160,12 +160,12 @@ You can create a new Mobile Application by clicking **Create new app** icon from
     
 6. Click **Create** to create a new mobile application. This displays the **Create App** window.
 
-    ![Create App](images/idab-create-app-new.jpg)
+    ![Create App](images/idab-create-app-new.png)
  
 7. Enter the application **Name**, **Location** where the project files will be stored, **Project/Bundle Id**, and the **Version** of the application.
 8. Click **Create** to create the application. This displays the **Project Explorer** window. This is your workspace for creating a new application.
 
-    ![Project Explorer](images/idab-proj-explorer.jpg)
+    ![Project Explorer](images/idab-proj-explorer.png)
  
 
 # Developing an Application
@@ -180,41 +180,41 @@ Project Explorer consists of the following section:
     * **Page** consists of the pages of the application.
     * **Controls** consists of **Basic** (**Button**, **Heading Text**, **Image**, and **Label**), **Data**, **Login**, **AI** (Watson Chat, Watson VR), and **Community** (Google OCR).
 
-        ![Controls](images/idab-basic.jpg) 
+        ![Controls](images/idab-basic.png) 
 
         * You can use the **Basic** components by drag-and-drop to the design board. On selecting the component in the design board, the properties of the component are displayed on the properties section and you can also assign an action for the component in the **Actions** tab.
         * Selecting **Databound** in the Controls helps you to connect with the data set by defining the Databound properties defined in your Mobile Foundation server instance.
 
-            ![Databound](images/idab-databound-list.jpg)
+            ![Databound](images/idab-databound-list.png)
 
         * Selecting **Login** will help you to create the Login properties. Select the **ChallengeHandler** to the drawing board to define the login properties.
 
-            ![Login](images/idab-logincontrol.jpg)
+            ![Login](images/idab-logincontrol.png)
 
         * Select **AI** to display the Watson services subscribed that can be added to your application.
 
-            ![Watson services](images/idab-ai.jpg)
+            ![Watson services](images/idab-ai.png)
 
         * Selecting **Community** will display the **Google_OCR** component.
 
     * **Project Editor**: displays the project files location and files can be viewed in code.
 
-        ![Project Editor](images/idab-project-editor.jpg) 
+        ![Project Editor](images/idab-project-editor.png) 
 
     * **Console**: displays the console to see the code for each component.
     * **Settings**: displays the project details.
 
-        ![Settings](images/idab-settings.jpg)
+        ![Settings](images/idab-settings.png)
 
         You can make modifications to the app settings. You can select additional platform, adding **Application Icon** in the **App details** tab. 
 
         In the **Digital server** tab, you can modify the server details, if required. 
 
-        ![Settings](images/idab-settings1.jpg)
+        ![Settings](images/idab-settings1.png)
 
         **Repair project** tab enables you to rebuild the app.
 
-        ![Settings](images/idab-settings2.jpg)
+        ![Settings](images/idab-settings2.png)
 
 
 * **Design Board** – At the centre of the project explorer is the design board which displays the either the design or the code and the channel for which the app creation is planned.
@@ -292,7 +292,7 @@ In the Design Board, switch from **Design to Code**, to view the code of the spe
 
 1. Switching the **Design to Code** will display the following popup screen:
 
-    ![Code editor](images/idab-code-editor.jpg)
+    ![Code editor](images/idab-code-editor.png)
  
 2. Click **Create** will create a copy of your application in an editable form. Any changes made in your app will not be reflected in the original application.
 3. This will display the project explorer with all the project files for the application.
@@ -329,4 +329,29 @@ After previewing your application and if it is ready for deploying, after rectif
 
 # Debugging known issues
 
+* In case of any error, refer to the `log.log` file for the respective platform folder path below:
+    * On Linux: `~/.config/<app name>/log.log`.
+    * On OS X: `~/Library/Logs/<app name>/log.log`.
+    * On Windows: `%USERPROFILE%\AppData\Roaming\<app name>\log.log`.
+
 # FAQ
+
+* Failure to create a Data set for a Microservice using a swagger file.
+
+    For the first time users of IBM Digital App Builder, the microservice creation may fail due to network letency.
+	To get rid of this, follow these steps:
+    a. Open  command prompt and go to the installed location of the app.
+    b. `cd ibm\adapterGenerator`
+    c. run the following command
+        `windows> execute.bat .`
+        `mac>./execute.sh .`
+    d. on successful complication of the above command, you can start using microservice (swagger file) from Digital App Builder.
+	
+* How to create a **Platform API Keys**
+
+    1. Go to [https://console.bluemix.net/iam/#/apikeys](https://console.bluemix.net/iam/#/apikeys) after login to IBM Cloud.
+    2. Navigate to **Platform API Keys** and click **Create**. This displays the **Create API key** window.
+    3. Enter the **Name** and **Description** for the new API Key and click **Create**.
+    4. Then, click **Show** to display the API key to copy and save it for later, or click **Download**.
+
+    >**Note**: For security reasons, the API key is only available to be copied or downloaded at the time of creation. If the API key is lost, you must create a new API key. For more information on user API Key, refer to [https://cloud.ibm.com/docs/iam/userid_keys.html#userapikey](https://cloud.ibm.com/docs/iam/userid_keys.html#userapikey).
