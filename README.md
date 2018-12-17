@@ -1,21 +1,43 @@
+
+# Contents
+
+* [About IBM Digital App Builder](#about-ibm-digital-app-builder)
+* [Getting Started](#getting-started)
+    * [Installation of IBM Digital App Builder](#installation-of-ibm-digital-app-builder)
+        * [Installing the Builder on MacOS](#installing-the-builder-on-macos)
+        * [Installing the Builder on Windows](#installing-the-builder-on-windows)
+    * [Launching the Builder](#launching-the-builder)
+    * [Prerequisites Check](#prerequisites-check)
+* [Creating a Mobile App](#creating-a-mobile-app)
+* [Developing an Application](#developing-an-application)
+    * [About Project Explorer](#about-project-explorer)
+* [Using Data Designer](#using-data-designer)
+    * [Dataset Creation](#dataset-creation)
+* [Authentication](#authentication)
+* [Integrating with Watson Services](#integrating-with-watson-services)
+* [Using Code Editor](#using-code-editor)
+* [Preview using the Builder](#preview-using-the-builder)
+* [Deploying an Application](#deploying-an-application)
+* [Troubleshooting](#troubleshooting)
+* [FAQ](#faq)
+
 # About IBM Digital App Builder
 
-**IBM Digital App Builder** helps you to quickly create a mobile application and deploy to Mobile Foundation on IBM Cloud. The Digital App Builder offers a low code/no code experience to build web and mobile applications with AI capabilities embedded through use of Watson services.
+**IBM Digital App Builder** (herein after referred as "Builder") helps you to quickly create a mobile application and deploy to Mobile Foundation. The Builder offers a low code/no code experience to build web and mobile applications with AI capabilities embedded using Watson services.
 
-* **Tools** – helps you to quickly drag-and-drop design elements and build the application to address departmental needs of an enterprise.
-* **Connectivity** – establishes the application connectivity to the databases and the development/deployment platform.
-* **Integration** – helps you to integrate and consume Watson microservices and add AI capabilities like Watson Assistant or Visual recognition into your app.
-* Test the application for various form factors before it is deployed.
-* Configure the back-end configuration for the application from the Digital App Builder and push the changes to the server
+* **Tools** – helps you to quickly drag-and-drop design elements and build the application.
+* **Integration** – helps you to add databound controls for your database and microservices backends.
+* **Preview** - preview the application for various form factors before it is deployed.
+* Configure Analytics for your application.
 * **Templates** – Use the quick start templates to build your application.
 
 # Getting Started
 
-IBM Digital App Builder consists of tools and IBM Cloud solutions for developers and administrators. This document is intended for application developers who are just starting to use the Digital App Builder to build their first mobile app.
+This section details how to install the Builder and create an app for Mobile, Web, and PWA.
 
 ## Installation of IBM Digital App Builder
 
-You can install the Digital App Builder on Mac and Windows operating system.
+You can install the Builder on Mac and Windows operating system.
 
 ### Pre-requisites:
 
@@ -29,7 +51,7 @@ IBM Digital App Builder requires the following software pre-installed:
 * Android Studio (To preview the app on Android emulator)
 * Chrome (To preview web platform)
 
-### Installing IBM Digital App Builder on MacOS
+### Installing the Builder on MacOS
 
 1. Install **Node.js** and **npm** by downloading the setup from [https://nodejs.org/en/](https://nodejs.org/en/) (Node.js 8.x or above)
 
@@ -50,12 +72,12 @@ IBM Digital App Builder requires the following software pre-installed:
     4.2.0
     ```
 
-3. [Download](https://github.com/MobileFirst-Platform-Developer-Center/Digital-App-Builder/releases) the Digital App Builder installation file (**IBM.Digital.App.Builder-0.XX.0-mac.zip**, where XX is the build version) and extract the contents.
-4. Double click the Digital App Builder executable to open the Digital App Builder.
+3. [Download](https://github.com/MobileFirst-Platform-Developer-Center/Digital-App-Builder/releases) the Builder installation file (**IBM.Digital.App.Builder-0.XX.0-mac.zip**, where XX is the build version) and extract the contents.
+4. Double click the Builder executable.
 
-    >**Note**: To preview the App on iOS, download and install **XCode** from Apple App Store.
+    >**Note**: For MacOS, download and install **XCode** from Apple App Store to preview the application.
 
-### Installing IBM Digital App Builder on Windows
+### Installing the Builder on Windows
 
 Run the following commands from the command prompt opened in administrative mode:
 
@@ -84,9 +106,9 @@ Run the following commands from the command prompt opened in administrative mode
     4.2.0
     ``` 
 
-4. [Download](https://github.com/MobileFirst-Platform-Developer-Center/Digital-App-Builder/releases) the Digital App Builder installation file (**IBM.Digital.App.Builder.Setup.0.XX.0.exe**, where XX is the build version).
-5. Double click the Digital App Builder executable to install. A short cut also created in the **Start > Programs** in the desktop. The default installation folder is `<AppData>\Local\IBMDigitalAppBuilder\app-0.xx.0`.
-6. Start creating apps using the Digital App Builder from the desktop shortcut or from the **Start > Programs** menu.
+4. [Download](https://github.com/MobileFirst-Platform-Developer-Center/Digital-App-Builder/releases) the Builder installation file (**IBM.Digital.App.Builder.Setup.0.XX.0.exe**, where XX is the build version).
+5. Double click the Builder executable to install. A short cut is also created in the **Start > Programs** in the desktop. The default installation folder is `<AppData>\Local\IBMDigitalAppBuilder\app-0.xx.0`.
+6. Start creating apps using the Builder from the desktop shortcut or from the **Start > Programs** menu.
 
     >**Note**: 
     >To preview the App on Android,
@@ -94,10 +116,10 @@ Run the following commands from the command prompt opened in administrative mode
     >* Configure an Android Virtual Machine. Follow the instructions here - [https://developer.android.com/studio/releases/emulator](https://developer.android.com/studio/releases/emulator).
 
 
-## Launching the IBM Digital App Builder
+## Launching the Builder
 
-* In **Windows**, you can launch the Digital App Builder by selecting **Start > Programs > IBM Digital App Builder**.
-* In **MacOS**, you can double click the **IBM Digital App Builder icon** to open to use the Digital App Builder.
+* In **Windows**, you can launch the Builder by selecting **Start > Programs > IBM Digital App Builder**.
+* In **MacOS**, you can double click the **IBM Digital App Builder icon** to open the Builder.
 
 >**Note**: 
 >* **Accept** the **License to use the IBM Digital App Builder** in the flash screen to proceed to further.
@@ -105,25 +127,22 @@ Run the following commands from the command prompt opened in administrative mode
 IBM Digital App Builder launch screen consists of the following sections:
 
 * **Getting Started**: Enables you to create a new app or open an existing app.
-* **Recent**: This section is displays the recently created application.
-* **Templates**: This section displays the available starter templates that will help you to quickly start building an application.
-* **Latest Updates**: Displays the latest updates from MF platform
+* **Recent**: This section displays the recently created application.
+* **Latest Updates**: Displays the news feeds from the [Mobile Development Centre](https://mobilefirstplatform.ibmcloud.com/blog/)
 
 ## Prerequisites Check
-
-Before started to use the Digital App Builder, a prerequisites check will check and confirm if you have installed the required software for the Digital App Builder to run proper and take corrective action in case of any issues.
 
 Perform a prerequisite check by selecting **Help > Prerequisites Check** before developing an application.
 
 ![Prerequisites Check](images/idab-pre-reqs-check.png)
 
-In case of any error, rectify the error and restart the Digital App Builder before creating the mobile application.
+In case of any error, rectify the error and restart the Builder before creating the mobile application.
 
 >**Note**: CocoaPods are required for MacOS only.
 
 # Creating a Mobile App
 
-You can create a new Mobile Application by clicking **Create new app** icon from the Digital App Builder dashboard.
+You can create a new Mobile Application by clicking **Create new app** icon from the Builder dashboard.
 
 1. Click **Create new app** icon. This displays the **Select Channel** window.
 
@@ -133,12 +152,14 @@ You can create a new Mobile Application by clicking **Create new app** icon from
 
     ![Select type of server](images/idab-select-server.png)
 
+    >**Note**: While developing an application for MacOS using Windows, you cannot preview the application.
+
 3. You can select a **Shared Playground Server** or a **Custom Professional Server**.
     * **Shared Playground Server** – a shared server to get you started quickly to build an application. On selecting the Shared Playground Server displays the **Configure IBM Cloud instance** screen.
 
         ![IBM Cloud login](images/idab-ibmidlogin.png)
 
-        Enter the **IBM Cloud API Key**. For more details access details refer to How to create a **Platform API Keys**. 
+        Enter the **IBM Cloud API Key**. For more details access details refer to **How to create a Platform API Keys** in the [FAQ](#faq) section. 
 
         Click **Login** to connect to the server. On successful login displays the **Create App** window where you can select a shared server and enter the details of the new application. Enter the details of the new application: **Name** of the appliation, **Location**, **Project/Bundle Id**, and **Version** of the application. 
  
@@ -167,35 +188,40 @@ You can create a new Mobile Application by clicking **Create new app** icon from
 
     ![Project Explorer](images/idab-proj-explorer.png)
  
-
 # Developing an Application
 
 ## About Project Explorer
 
-![Project Explorer components](images/idab-proj-explorer1.jpg) 
+![Project Explorer components](images/idab-proj-explorer1.png) 
 
 Project Explorer consists of the following section:
 
-* **Activity Bar** – Consists of links to **Workbench**, **Data**, **Watson**, **Cloud Functions**, **Engagement**, **DevOps**, **Page**, **Refresh**, and **Controls**.
-    * **Page** consists of the pages of the application.
-    * **Controls** consists of **Basic** (**Button**, **Heading Text**, **Image**, and **Label**), **Data**, **Login**, **AI** (Watson Chat, Watson VR), and **Community** (Google OCR).
+* **Activity Bar** – Consists of:
+    * **Workbench** - displays or hides page details
+    * **Data** - helps you to add a dataset by connecting to an existing data source or create a data source for a microservice using OpenAPI doc. 
+    * **Watson** - consists of Image Recognition and Chatbot (Watson Assistant) components for configuring an existing instance or create a new instance. 
+    * **Cloud Functions** - helps you to work with Cloud Functions (Coming soon!)
+    * **Engagement** - work with Engagements (Coming soon!)
+    * **DevOps** - work with IBM DevOps process (Coming soon!)
+    * **Page** consists of the pages of the application and **Controls**. You can create new pages by clicking the **+** sign.
+        * **Controls** consists of **Basic** (**Button**, **Heading Text**, **Image**, and **Label**), **Data**, **Login**, **AI** (Watson Chat, Watson VR), and **Community** (Google OCR).
 
-        ![Controls](images/idab-basic.png) 
+            ![Controls](images/idab-basic.png) 
 
-        * You can use the **Basic** components by drag-and-drop to the design board. On selecting the component in the design board, the properties of the component are displayed on the properties section and you can also assign an action for the component in the **Actions** tab.
-        * Selecting **Databound** in the Controls helps you to connect with the data set by defining the Databound properties defined in your Mobile Foundation server instance.
+            * You can use the **Basic** components by drag-and-drop to the design board. On selecting the component in the design board, the properties of the component are displayed on the properties section and you can also assign an action for the component in the **Actions** tab.
+            * Selecting **Databound** in the Controls helps you to connect with the data set by defining the Databound properties defined in your Mobile Foundation server instance.
 
-            ![Databound](images/idab-databound-list.png)
+                ![Databound](images/idab-databound-list.png)
 
-        * Selecting **Login** will help you to create the Login properties. Select the **ChallengeHandler** to the drawing board to define the login properties.
+            * Selecting **Login** will help you to create the Login properties. Select the **ChallengeHandler** to the design board to define the login properties.
 
-            ![Login](images/idab-logincontrol.png)
+                ![Login](images/idab-logincontrol.png)
 
-        * Select **AI** to display the Watson services subscribed that can be added to your application.
+            * Select **AI** to display the Watson services subscribed that can be added to your application.
 
-            ![Watson services](images/idab-ai.png)
+               ![Watson services](images/idab-ai.png)
 
-        * Selecting **Community** will display the **Google_OCR** component.
+            * Selecting **Community** will display the **Google_OCR** component.
 
     * **Project Editor**: displays the project files location and files can be viewed in code.
 
@@ -228,7 +254,7 @@ Creating a Data set for a micro service involves the following steps. After crea
 
 ### Creating a new data set
 
-1. From the landing page of the Digital App Builder, open any existing App or create one.
+1. From the landing page of the Builder, open any existing App or create one.
 2. Click **Data** tab.
 3. Create a data set. You can either create from an existing source (default) or create a data source for a microservice using an OpenAPI doc.
     * Create from existing data source (default) - This will populate the dropdown with all the Data sources(adapters) from the configured Mobile Foundation server.
@@ -265,23 +291,23 @@ Now your component is associated with the dataset. This will allow your app to l
 
 # Authentication
 
-The Login control helps you to create a login page for your application to connect the user to the Mobile Foundation server. Make the following configuration on the server side and then to the application in the Digital App Builder.
+The Login control helps you to create a login page for your application to connect the user to the Mobile Foundation server. Make the following configuration on the server side and then to the application in the Builder.
 
 1. Make the following changes on Mobile Foundation Server
     * Deploy a security check adapter which would take username and password as input.
     * In the mfpconsole, go to app's security tab and under Mandatory Application Scope, add the above created security definition as scope element.
-2.	Make the following configuration in your Application using the Digital App Builder.
+2.	Make the following configuration in your Application using the Builder.
     * Add **Login** form to canvas.
     * In **Properties** tab, input the security check name and the page to navigate on login success.
     * Run the app.
 
-# About Watson Services
+# Integrating with Watson Services
 
-You can connect to any of the Watson Services subscribed by you, like Watson Chat, Watson VR etc. You can use the Watson services to create a new model visual recognition or modify an existing one. 
+The builder provides Watson components which can connect to Watson assitant or visual recognition service on IBM Cloud. You can add these components to your application and configure the same to connect to the chat service or VR service provisioned on IBM Cloud.
 
 To add a Watson service to your application:
-1. From the Digital App Builder, click **Controls**. Navigate and click **AI** tab. This will display the Watson_Chat and Watson_VR.
-2. Drag and drop the required Watson service to the drawing board.
+1. From the Builder, click **Controls**. Navigate and click **AI** tab. This will display the Watson_Chat and Watson_VR.
+2. Drag and drop the required Watson service to the design board.
 3. Modify the properties and action for the Watson component.
 
 # Using Code Editor
@@ -297,7 +323,7 @@ In the Design Board, switch from **Design to Code**, to view the code of the spe
 2. Click **Create** will create a copy of your application in an editable form. Any changes made in your app will not be reflected in the original application.
 3. This will display the project explorer with all the project files for the application.
 
-# Preview using Digital App Builder
+# Preview using the Builder
 
 You can preview the application developed by connecting to the simulation to the channel selected.
 
@@ -327,24 +353,24 @@ After previewing your application and if it is ready for deploying, after rectif
 4. Open **Xcode** and then build the project. 
     >**Note**: For publishing and building follow the steps from tutorial https://developer.apple.com/ios/submit/.
 
-# Debugging known issues
+# Troubleshooting
 
 * In case of any error, refer to the `log.log` file for the respective platform folder path below:
     * On mac OS: `~/Library/Logs/<app name>/log.log`.
     * On Windows: `%USERPROFILE%\AppData\Roaming\<app name>\log.log`.
 
-# FAQ
-
 * Failure to create a Data set for a Microservice using a swagger file.
 
-    For the first time users of IBM Digital App Builder, the microservice creation may fail due to network letency.
-	To get rid of this, follow these steps:
-    a. Open  command prompt and go to the installed location of the app.
-    b. `cd ibm\adapterGenerator`
-    c. run the following command
+    For the first time users of the Builder, the microservice creation may fail due to network letency.
+    To get rid of this, follow these steps:
+    1. Open command prompt and go to the installed location of the app.
+    2. `cd ibm\adapterGenerator`
+    3. run the following command
         `windows> execute.bat .`
         `mac>./execute.sh .`
-    d. on successful complication of the above command, you can start using microservice (swagger file) from Digital App Builder.
+    4. on successful complication of the above command, you can start using microservice (swagger file) from the Builder.
+
+# FAQ
 	
 * How to create a **Platform API Keys**
 
