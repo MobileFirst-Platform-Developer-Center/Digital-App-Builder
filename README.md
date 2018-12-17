@@ -192,7 +192,7 @@ You can create a new Mobile Application by clicking **Create new app** icon from
 
 ## About Project Explorer
 
-![Project Explorer components](images/idab-proj-explorer1.jpg) 
+![Project Explorer components](images/idab-proj-explorer1.png) 
 
 Project Explorer consists of the following section:
 
@@ -202,7 +202,7 @@ Project Explorer consists of the following section:
     * **Watson** - consists of Image Recognition and Chatbot (Watson Assistant) components for configuring an existing instance or create a new instance. 
     * **Cloud Functions** - helps you to work with Cloud Functions (Coming soon!)
     * **Engagement** - work with Engagements (Coming soon!)
-    * **DevOps** - 
+    * **DevOps** - work with IBM DevOps process (Coming soon!)
     * **Page** consists of the pages of the application and **Controls**. You can create new pages by clicking the **+** sign.
         * **Controls** consists of **Basic** (**Button**, **Heading Text**, **Image**, and **Label**), **Data**, **Login**, **AI** (Watson Chat, Watson VR), and **Community** (Google OCR).
 
@@ -213,7 +213,7 @@ Project Explorer consists of the following section:
 
                 ![Databound](images/idab-databound-list.png)
 
-            * Selecting **Login** will help you to create the Login properties. Select the **ChallengeHandler** to the drawing board to define the login properties.
+            * Selecting **Login** will help you to create the Login properties. Select the **ChallengeHandler** to the design board to define the login properties.
 
                 ![Login](images/idab-logincontrol.png)
 
@@ -307,7 +307,7 @@ The builder provides Watson components which can connect to Watson assitant or v
 
 To add a Watson service to your application:
 1. From the Builder, click **Controls**. Navigate and click **AI** tab. This will display the Watson_Chat and Watson_VR.
-2. Drag and drop the required Watson service to the drawing board.
+2. Drag and drop the required Watson service to the design board.
 3. Modify the properties and action for the Watson component.
 
 # Using Code Editor
@@ -362,13 +362,13 @@ After previewing your application and if it is ready for deploying, after rectif
 * Failure to create a Data set for a Microservice using a swagger file.
 
     For the first time users of the Builder, the microservice creation may fail due to network letency.
-	To get rid of this, follow these steps:
-    a. Open  command prompt and go to the installed location of the app.
-    b. `cd ibm\adapterGenerator`
-    c. run the following command
+    To get rid of this, follow these steps:
+    1. Open command prompt and go to the installed location of the app.
+    2. `cd ibm\adapterGenerator`
+    3. run the following command
         `windows> execute.bat .`
         `mac>./execute.sh .`
-    d. on successful complication of the above command, you can start using microservice (swagger file) from the Builder.
+    4. on successful complication of the above command, you can start using microservice (swagger file) from the Builder.
 
 # FAQ
 	
