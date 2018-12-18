@@ -28,8 +28,8 @@ IBM's statements regarding its plans, directions and intent are subject to chang
     * [About the Explorer](#about-the-explorer)
 * [Controls](#controls)
     * [Basic controls](#basic-controls) 
-        * [Buttons](#buttons)
-        * [Heading](#heading) 
+        * [Button](#button)
+        * [Heading Text](#heading-text) 
         * [Image](#image) 
         * [Label](#label) 
     * [Databound](#databound)
@@ -42,8 +42,8 @@ IBM's statements regarding its plans, directions and intent are subject to chang
 * [Using Data Viewer](#using-data-viewer)
     * [Dataset Creation](#dataset-creation)
 * [Integrating with Watson Services](#integrating-with-watson-services)
-    * [Watson Assistant](#watson-assistant)
-    * [Watson Visual Recognition](#watson-visual-recognition)
+    * [Chatbot](#chatbot)
+    * [Image Recognition](#image-recognition)
 * [Using Code Editor](#using-code-editor)
 * [Preview using the Builder](#preview-using-the-builder)
 * [Deploying an Application](#deploying-an-application)
@@ -460,9 +460,11 @@ After previewing your application and if it is ready for deploying, after rectif
 	
 * How to create a **Platform API Keys**
 
-    1. Go to [https://console.bluemix.net/iam/#/apikeys](https://console.bluemix.net/iam/#/apikeys) after login to IBM Cloud.
-    2. Navigate to **Platform API Keys** and click **Create**. This displays the **Create API key** window.
-    3. Enter the **Name** and **Description** for the new API Key and click **Create**.
+    1. Go to [https://cloud.ibm.com/iam/#/apikeys](https://console.bluemix.net/iam/#/apikeys) after login to IBM Cloud.
+    2. Navigate to **Users**, click your name from the list and select the **User details** option.
+    3. Click **Create an IBM Cloud API key** window.
+    3. Enter the **Name** and **Description** for the new API Key.
+    4. Click **Create**.
     4. Then, click **Show** to display the API key to copy and save it for later, or click **Download**.
 
     >**Note**: For security reasons, the API key is only available to be copied or downloaded at the time of creation. If the API key is lost, you must create a new API key. For more information on user API Key, refer to [https://cloud.ibm.com/docs/iam/userid_keys.html#userapikey](https://cloud.ibm.com/docs/iam/userid_keys.html#userapikey).
