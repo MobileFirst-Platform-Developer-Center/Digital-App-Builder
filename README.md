@@ -85,7 +85,14 @@ IBM Digital App Builder requires the following software pre-installed:
 
 ### Installing on MacOS
 
-1. Install **Node.js** and **npm** by downloading the setup from [https://nodejs.org/en/](https://nodejs.org/en/) (Node.js 8.x or above)
+
+1. Download the .zip (**IBM.Digital.App.Builder-n.nn.n-mac.zip**) from [https://github.com/MobileFirst-Platform-Developer-Center/Digital-App-Builder/releases](https://github.com/MobileFirst-Platform-Developer-Center/Digital-App-Builder/releases).
+
+2. Extract the contents.
+
+3. Move the .app file to the **Applications** folder.
+
+4. Install **Node.js** and **npm** by downloading the setup from [https://nodejs.org/en/](https://nodejs.org/en/) (Node.js 8.x or above)
 
     ```java
     $node -v
@@ -93,7 +100,7 @@ IBM Digital App Builder requires the following software pre-installed:
     $npm -v
     6.4.1
     ```
-2. Install **Cordova** and **ionic**
+5. Install **Cordova** and **ionic**
 
     ```java
     $ sudo npm install -g cordova && sudo npm install -g ionic
@@ -102,16 +109,7 @@ IBM Digital App Builder requires the following software pre-installed:
     $ ionic –version
     4.2.0
     ```
-
-3. Download the .zip (**IBM.Digital.App.Builder-n.nn.n-mac.zip**) from [https://github.com/MobileFirst-Platform-Developer-Center/Digital-App-Builder/releases](https://github.com/MobileFirst-Platform-Developer-Center/Digital-App-Builder/releases).
-
-4. Extract the contents.
-
-5. Move the .app file to the **Applications** folder.
-
-6. Double click the Builder executable.
-
-    >**Note**: For MacOS, download and install **XCode** from Apple App Store to preview the application.
+>**Note**: For MacOS, download and install **XCode** from Apple App Store to preview the application.
 
 ### Installing on Windows
 
