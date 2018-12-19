@@ -12,6 +12,8 @@ IBM's statements regarding its plans, directions and intent are subject to chang
 
 [![Download the IBM Digital App Builder](images/digital-app-builder.png?branch=master)](https://github.com/MobileFirst-Platform-Developer-Center/Digital-App-Builder/releases) 
 
+>**Note**: MacOS: Copy the **.app** file to the **Applications** folder.
+
 <hr>
 
 # Contents
@@ -49,6 +51,7 @@ IBM's statements regarding its plans, directions and intent are subject to chang
 * [Deploying an Application](#deploying-an-application)
 * [Troubleshooting](#troubleshooting)
 * [FAQ](#faq)
+* [Known Issues](#known-issues)
 
 # About IBM Digital App Builder
 
@@ -86,7 +89,7 @@ IBM Digital App Builder requires the following software pre-installed:
 ### Installing on MacOS
 
 
-1. Download the .zip (**IBM.Digital.App.Builder-n.nn.n-mac.zip**) from [https://github.com/MobileFirst-Platform-Developer-Center/Digital-App-Builder/releases](https://github.com/MobileFirst-Platform-Developer-Center/Digital-App-Builder/releases).
+1. Download the .zip (**IBM.Digital.App.Builder-n.nn.n-mac.zip**) from [here](https://github.com/MobileFirst-Platform-Developer-Center/Digital-App-Builder/releases).
 
 2. Extract the contents.
 
@@ -455,10 +458,6 @@ After previewing your application and if it is ready for deploying, after rectif
     and preview from the Builder again.
     
 # FAQ
-
-* How to run on Windows
-
-    Run the Digital App Builder on Windows with Administrative privileges. You can do this by selecting the Builder icon and right-click and select "Run as administrator". 
 	
 * How to create a **Platform API Keys**
 
@@ -471,4 +470,12 @@ After previewing your application and if it is ready for deploying, after rectif
 
     >**Note**: For security reasons, the API key is only available to be copied or downloaded at the time of creation. If the API key is lost, you must create a new API key. For more information on user API Key, refer to [https://cloud.ibm.com/docs/iam/userid_keys.html#userapikey](https://cloud.ibm.com/docs/iam/userid_keys.html#userapikey).
 
+# Known Issues
 
+* Cannot preview an app on Windows
+
+    Run the Digital App Builder on Windows with Administrative privileges. You can do this by selecting the Builder icon and right-click and select "Run as administrator". 
+
+* Builder crashes when you create a page name with a number.
+
+    Do not use numbers in a page name.
