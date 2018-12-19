@@ -10,7 +10,7 @@ IBM's statements regarding its plans, directions and intent are subject to chang
 
 <hr>
 
-**[Download the IBM Digital App Builder](https://github.com/MobileFirst-Platform-Developer-Center/Digital-App-Builder/releases)**
+[![Download the IBM Digital App Builder](images/digital-app-builder.png?branch=master)](https://github.com/MobileFirst-Platform-Developer-Center/Digital-App-Builder/releases) 
 
 <hr>
 
@@ -103,9 +103,13 @@ IBM Digital App Builder requires the following software pre-installed:
     4.2.0
     ```
 
-3. [Download](https://github.com/MobileFirst-Platform-Developer-Center/Digital-App-Builder/releases) the Builder installation file (**IBM.Digital.App.Builder-n.nn.n-mac.zip**) and extract the contents.
+3. Download the .zip (**IBM.Digital.App.Builder-n.nn.n-mac.zip**) from [https://github.com/MobileFirst-Platform-Developer-Center/Digital-App-Builder/releases](https://github.com/MobileFirst-Platform-Developer-Center/Digital-App-Builder/releases).
 
-4. Double click the Builder executable.
+4. Extract the contents.
+
+5. Move the .app file to the **Applications** folder.
+
+6. Double click the Builder executable.
 
     >**Note**: For MacOS, download and install **XCode** from Apple App Store to preview the application.
 
