@@ -1,8 +1,8 @@
-# **Welcome!**
+# IBM Digital App Builder
 
 Thank you for your interest in the **IBM Digital App Builder (beta)**.
 
-The **IBM Digital App Builder (beta)** is open to all. Customers and business partners are active participants who work alongside our teams to help refine IBM product offerings by providing feedback, ideas, and domain expertise. Help us create the future of IBM offerings together!
+By downloading IBM Digital App Builder (beta), you agree and confirm that (1) you have had the opportunity to review the agreement and (2) you agree to be bound by its terms, (3) you accepted the license agreement by visiting [here](https://epwt-www.mybluemix.net/software/support/trial/cst/programwebsite.wss?siteId=505&tabId=939&w=dakw9d8&p=5571ss17).
 
 **Disclaimer**
 
@@ -51,7 +51,6 @@ IBM's statements regarding its plans, directions and intent are subject to chang
 * [Deploying an Application](#deploying-an-application)
 * [Troubleshooting](#troubleshooting)
 * [FAQ](#faq)
-* [Known Issues](#known-issues)
 
 # About IBM Digital App Builder
 
