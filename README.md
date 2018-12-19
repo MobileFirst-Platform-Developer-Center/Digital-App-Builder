@@ -51,6 +51,7 @@ IBM's statements regarding its plans, directions and intent are subject to chang
 * [Deploying an Application](#deploying-an-application)
 * [Troubleshooting](#troubleshooting)
 * [FAQ](#faq)
+* [Known Issues](#known-issues)
 
 # About IBM Digital App Builder
 
