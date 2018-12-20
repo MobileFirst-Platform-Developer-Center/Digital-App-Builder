@@ -12,7 +12,6 @@ IBM's statements regarding its plans, directions and intent are subject to chang
 
 [![Download the IBM Digital App Builder](images/digital-app-builder.png?branch=master)](https://github.com/MobileFirst-Platform-Developer-Center/Digital-App-Builder/releases) 
 
->**Note**: MacOS: Copy the **.app** file to the **Applications** folder.
 
 <hr>
 
@@ -88,11 +87,11 @@ IBM Digital App Builder requires the following software pre-installed:
 ### Installing on MacOS
 
 
-1. Download the .zip (**IBM.Digital.App.Builder-n.nn.n-mac.zip**) from [here](https://github.com/MobileFirst-Platform-Developer-Center/Digital-App-Builder/releases).
+1. Download the .dmg (**IBM.Digital.App.Builder-n.nn.n.dmg**) from [here](https://github.com/MobileFirst-Platform-Developer-Center/Digital-App-Builder/releases).
 
-2. Extract the contents.
+2. Double click on it to mount the installer.
 
-3. Move the .app file to the **Applications** folder.
+3. Move the IBM Digital App Builder to the **Applications** folder.
 
 4. Install **Node.js** and **npm** by downloading the setup from [https://nodejs.org/en/](https://nodejs.org/en/) (Node.js 8.x or above)
 
