@@ -91,7 +91,7 @@ IBM Digital App Builder requires the following software pre-installed:
 
 2. Double click on it to mount the installer.
 
-3. Move the IBM Digital App Builder to the **Applications** folder.
+3. In the window that the installer opens, drag and drop the IBM Digital App Builder to the **Applications** folder.
 
 4. Install **Node.js** and **npm** by downloading the setup from [https://nodejs.org/en/](https://nodejs.org/en/) (Node.js 8.x or above)
 
