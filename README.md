@@ -12,6 +12,7 @@ IBM's statements regarding its plans, directions and intent are subject to chang
 
 [![Download the IBM Digital App Builder](images/digital-app-builder.png?branch=master)](https://github.com/MobileFirst-Platform-Developer-Center/Digital-App-Builder/releases) 
 
+
 <hr>
 
 # Contents
@@ -75,26 +76,16 @@ You can install the Builder on Mac and Windows operating system.
 
 IBM Digital App Builder requires the following software pre-installed:
 
-* Node Package Manager (npm) 
+* Npm
 * Cordova
 * Ionic
-* CocoaPods (MacOS only)
+* IBM Cloud account with a Mobile Foundation Server instance.
+* Xcode (To preview the app on iOS simulator)
 * Android Studio (To preview the app on Android emulator)
-
-
-### Previewing the app
-
-The following software is required for previewing the app:
-
-* Android Studio (To preview the app on Android emulator)
-    * Follow the instructions [here](https://developer.android.com/studio/).
-    * Configure an Android Virtual Machine. Follow the instructions [here](https://developer.android.com/studio/releases/emulator).
 * Chrome (To preview web platform)
-* Xcode (To preview the app on iOS simulator). For MacOS only, download and install **XCode** from Apple App Store to preview the app.
-* IBM Cloud account with a Mobile Foundation Server account (Mobile Foundation service on IBM Cloud, or Mobile Foundation v8 on ICP).
-
 
 ### Installing on MacOS
+
 
 1. Download the .dmg (**IBM.Digital.App.Builder-n.nn.n.dmg**) from [here](https://github.com/MobileFirst-Platform-Developer-Center/Digital-App-Builder/releases).
 
@@ -102,7 +93,7 @@ The following software is required for previewing the app:
 
 3. In the window that the installer opens, drag and drop the IBM Digital App Builder to the **Applications** folder.
 
-4. Install **Node.js** and **npm** by downloading the setup from [https://nodejs.org/en/download](https://nodejs.org/en/download) (Node.js 8.x or above). For more information on installation instructions, refer [here](https://nodejs.org/en/download/package-manager/). Check the node and npm version as shown below: 
+4. Install **Node.js** and **npm** by downloading the setup from [https://nodejs.org/en/](https://nodejs.org/en/) (Node.js 8.x or above)
 
     ```java
     $node -v
@@ -110,26 +101,22 @@ The following software is required for previewing the app:
     $npm -v
     6.4.1
     ```
-5. Install **Cordova**. You can download and install the package from [Cordova](https://cordova.apache.org/docs/en/latest/guide/cli/index.html).
+5. Install **Cordova** and **ionic**
 
     ```java
-    $ sudo npm install -g cordova
+    $ sudo npm install -g cordova && sudo npm install -g ionic
     $ cordova –version
     7.0.1
-    ```
-6. Install **ionic**. You can download and install the package from [ionic](https://ionicframework.com/docs/cli/).
-
-    ```java
-    $ sudo npm install -g ionic
     $ ionic –version
     4.2.0
     ```
+>**Note**: For MacOS, download and install **XCode** from Apple App Store to preview the application.
 
 ### Installing on Windows
 
 Run the following commands from the command prompt opened in administrative mode:
 
-1. Install **Node.js** and **npm** by downloading the setup from [https://nodejs.org/en/download](https://nodejs.org/en/download) (Node.js 8.x or above). For more information on installation instructions, refer [here](https://nodejs.org/en/download/package-manager/). Check the node and npm version as shown below: 
+1. Install **Node.js** and **npm** by downloading the setup from [https://nodejs.org/en/](https://nodejs.org/en/) (Node.js 8.x or above)
 
     ```java
     C:\>node -v
@@ -138,7 +125,7 @@ Run the following commands from the command prompt opened in administrative mode
     6.4.1
     ```
 
-2. Install **Cordova**. You can download and install the package from [Cordova](https://cordova.apache.org/docs/en/latest/guide/cli/index.html).
+2. Install **Cordova**
 
     ```java
     C:\>npm install -g cordova
@@ -146,7 +133,7 @@ Run the following commands from the command prompt opened in administrative mode
     7.0.1
     ```
 
-3. Install **ionic**. You can download and install the package from [ionic](https://ionicframework.com/docs/cli/).
+3. Install **ionic**
 
     ```java
     C:\>npm install -g ionic
@@ -158,11 +145,15 @@ Run the following commands from the command prompt opened in administrative mode
 5. Double click the Builder executable to install. A short cut is also created in the **Start > Programs** in the desktop. The default installation folder is `<AppData>\Local\IBMDigitalAppBuilder\app-n.nn.n`.
 6. Start creating apps using the Builder from the desktop shortcut or from the **Start > Programs** menu.
 
+    >**Note**: 
+    >To preview the App on Android,
+    >* You will need to install Android Studio. Follow the instructions here - [https://developer.android.com/studio/](https://developer.android.com/studio/).
+    >* Configure an Android Virtual Machine. Follow the instructions here - [https://developer.android.com/studio/releases/emulator](https://developer.android.com/studio/releases/emulator).
 
 ## Launching the Builder
 
-* In **MacOS**, you can double click the **IBM Digital App Builder icon** to open the Builder.
 * In **Windows**, you can launch the Builder by selecting **Start > Programs > IBM Digital App Builder**.
+* In **MacOS**, you can double click the **IBM Digital App Builder icon** to open the Builder.
 
 >**Note**: 
 >* **Accept** the **License to use the IBM Digital App Builder** in the flash screen to proceed to further.
@@ -175,7 +166,7 @@ Perform a prerequisite check by selecting **Help > Prerequisites Check** before 
 
 In case of any error, rectify the error and restart the Builder before creating an application.
 
->**Note**: [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods) are required for MacOS only.
+>**Note**: CocoaPods are required for MacOS only.
 
 
 # Creating an App
@@ -195,10 +186,7 @@ You can create a new Application by clicking **Create new app** icon from the Bu
     ![Select type of server](images/idab-select-server.png)
 
 4. You can select a **Shared Playground Server** or a **Custom Professional Server**.
-
-    {: #shared-server-limitations}
     * **Shared Playground Server** – a shared Mobile Foundation server hosted on IBM Cloud to get you started quickly.
-    
 
         >**Warning**: The Shared Playground Server is a common server that is shared between many developers. This server should not be used for production apps. The data in this server can be deleted without notice. The server uptime is not guaranteed.
 
@@ -244,6 +232,11 @@ Project Explorer consists of the following section:
     * **Cloud Functions** - helps you to work with Cloud Functions (Coming soon!)
     * **Engagement** - work with Engagements (Coming soon!)
     * **DevOps** - work with IBM DevOps process (Coming soon!)
+    * **Page** consists of the pages of the application and **Controls**. You can create new pages by clicking the **+** sign.
+    * **Project Editor**: displays the project files location and files can be viewed in code.
+
+        ![Project Editor](images/idab-project-editor.png) 
+
     * **Console**: displays the console to see the code for each component.
     * **Settings**: displays the project details.
 
@@ -258,10 +251,8 @@ Project Explorer consists of the following section:
         **Repair project** tab enables you to rebuild the app.
 
         ![Settings](images/idab-settings2.png)
-    * **Page** consists of the pages of the application and **Controls**. You can create new pages by clicking the **+** sign.
-    * **Project Editor**: displays the project files location and files can be viewed in code.
 
-        ![Project Editor](images/idab-project-editor.png) 
+
 * **Canvas** – At the centre of the project explorer is the canvas which displays the either the design or the code and the channel for which the app creation is planned.
 * **Properties** – At the right-hand side is the properties and action toolbar. When a control is placed in the canvas, you can edit and modify the properties of the control and connect a control with a related action to perform.
 
@@ -330,11 +321,11 @@ The Login Form control helps you to create a login page for your application to 
 ![Watson services](images/idab-ai.png)
 
 ### Watson Chat
-This control provides a complete chat interface that can be powered with Watson Assistant service on IBM Cloud. In the properties section select the configured Watson Assistant service and select the Workspace you want to connect to. To define and train a Chat conversation see [here](#chatbot).
+This control provides a complete chat interface that can be powered with Watson Assistant service on IBM Cloud. In the properties section select the configured Watson Assistant service and select the Workspace you want to connect to. To define and train a Chat conversation see <hhere>
 
 ### Watson VR
 This control provides a ability to take a picture and have Watson Visual recognition service identify it for you.
-In the properties section select the configured Visual Recognition service and the classification model. To define and train using your own images see [here](#image-recognition).
+In the properties section select the configured Visual Recognition service and the classification model. To define and train using your own images see <here>  
 
 
 # Using Data viewer
