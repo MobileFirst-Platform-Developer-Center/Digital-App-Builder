@@ -196,7 +196,6 @@ You can create a new Application by clicking **Create new app** icon from the Bu
 
 4. You can select a **Shared Playground Server** or a **Custom Professional Server**.
 
-    {: #shared-server-limitations}
     * **Shared Playground Server** – a shared Mobile Foundation server hosted on IBM Cloud to get you started quickly.
     
 
