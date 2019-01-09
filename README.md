@@ -49,6 +49,8 @@ IBM's statements regarding its plans, directions and intent are subject to chang
 * [Deploying an Application](#deploying-an-application)
 * [Troubleshooting](#troubleshooting)
 * [FAQ](#faq)
+* [Shared Server Limitations](#shared-server-limitations)
+* [Known Issues](#known-issues)
 
 # About IBM Digital App Builder
 
@@ -475,6 +477,10 @@ After previewing your application and if it is ready for deploying, after rectif
     4. Then, click **Show** to display the API key to copy and save it for later, or click **Download**.
 
     >**Note**: For security reasons, the API key is only available to be copied or downloaded at the time of creation. If the API key is lost, you must create a new API key. For more information on user API Key, refer to [https://cloud.ibm.com/docs/iam/userid_keys.html#userapikey](https://cloud.ibm.com/docs/iam/userid_keys.html#userapikey).
+
+# Shared Server Limitations
+
+The Shared Playground Server is a common server that is shared between many developers. This server should not be used for production apps. The data in this server can be deleted without notice. The server uptime is not guaranteed.
 
 # Known Issues
 
