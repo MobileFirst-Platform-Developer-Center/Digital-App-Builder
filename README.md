@@ -436,8 +436,8 @@ After previewing your application and if it is ready for deploying, after rectif
 # Troubleshooting
 
 * In case of any error, refer to the `log.log` file for the respective platform folder path below:
-    * On mac OS: `~/Library/Logs/<app name>/log.log`.
-    * On Windows: `%USERPROFILE%\AppData\Roaming\<app name>\log.log`.
+    * On mac OS: `~/Library/Logs/IBM Digital App Builder/log.log`.
+    * On Windows: `%USERPROFILE%\AppData\Roaming\IBM Digital App Builder\log.log`.
 
 * Failure to create a Data set for a Microservice using a swagger file.
 
