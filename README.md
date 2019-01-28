@@ -91,6 +91,7 @@ The following software is required for previewing the app:
 * Android Studio (To preview the app on Android emulator)
     * Follow the instructions [here](https://developer.android.com/studio/) for installation.
     * Configure an Android Virtual Machine. Follow the instructions [here](https://developer.android.com/studio/releases/emulator).
+    * Android WebView version 68.X.XXXX.XX or above.
 * Chrome (To preview web platform)
 * Xcode (To preview the app on iOS simulator). For MacOS only, download and install **XCode** from Apple App Store to preview the app.
 * IBM Cloud account with a Mobile Foundation Server account (Mobile Foundation service on IBM Cloud, or Mobile Foundation v8 on ICP).
@@ -456,11 +457,15 @@ After previewing your application and if it is ready for deploying, after rectif
         `mac>./execute.sh .`
     4. on successful complication of the above command, you can start using microservice (swagger file) from the Builder.
 
-* Failure to preview the application on Windows.
+* Failure to preview the app on Windows.
 
     In the Builder, go to **Settings > Repair project** and click **Rebuild Dependencies** and **Rebuild Platforms** buttons.
 
-* In MacOS, preview of the application on an Android simulator fails with app crashes. With the following error:
+* Android App does not work after adding the List component to the app.
+
+    This is due to Android WebView version is less than 68.X.XXXX.XX. To resolve this, upgrade the Android WebView version to 68.X.XXXX.XX or above.
+
+* In MacOS, preview of the app on an Android simulator fails with app crashes. With the following error:
 
     `java.lang.RuntimeException: Unable to create application com.ibm.MFPApplication: java.lang.RuntimeException: Client configuration file mfpclient.properties not found in application assets. Use the MFP CLI command 'mfpdev app register' to create the file.`
 
