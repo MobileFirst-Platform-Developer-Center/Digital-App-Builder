@@ -115,17 +115,23 @@ The following software is required for previewing the app:
 5. Install **Cordova**. You can download and install the package from [Cordova](https://cordova.apache.org/docs/en/latest/guide/cli/index.html).
 
     ```java
-    $ sudo npm install -g cordova
+    $ npm install -g cordova
     $ cordova –version
     7.0.1
     ```
+
+    >**Note**: If you are facing any permission issues in running `$ npm install -g cordova` command, install using elevated previleges (`$ sudo npm install -g cordova`).
+
+
 6. Install **ionic**. You can download and install the package from [ionic](https://ionicframework.com/docs/cli/).
 
     ```java
-    $ sudo npm install -g ionic
+    $ npm install -g ionic
     $ ionic –version
     4.2.0
     ```
+
+    >**Note**: If you are facing any permission issues in running `$ npm install -g ionic` command, install using elevated previleges (`$ sudo npm install -g ionic`).
 
 ### Installing on Windows
 
