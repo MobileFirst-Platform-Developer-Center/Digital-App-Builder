@@ -1,12 +1,8 @@
-<!-- 
-{:new_window: target="_blank"} 
--->
-
 # IBM Digital App Builder
 
 Thank you for your interest in the **IBM Digital App Builder (beta)**.
 
-By downloading IBM Digital App Builder (beta), you agree and confirm that (1) you have had the opportunity to review the agreement and (2) you agree to be bound by its terms, (3) you accepted the license agreement by visiting [here](https://epwt-www.mybluemix.net/software/support/trial/cst/programwebsite.wss?siteId=505&tabId=939&w=dakw9d8&p=5571ss17){: new_window}.
+By downloading IBM Digital App Builder (beta), you agree and confirm that (1) you have had the opportunity to review the agreement and (2) you agree to be bound by its terms, (3) you accepted the license agreement by visiting [here](https://epwt-www.mybluemix.net/software/support/trial/cst/programwebsite.wss?siteId=505&tabId=939&w=dakw9d8&p=5571ss17).
 
 **Disclaimer**
 
