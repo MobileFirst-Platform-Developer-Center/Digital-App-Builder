@@ -480,7 +480,7 @@ After previewing your application and if it is ready for deploying, after rectif
 	
 * How to create a **Platform API Keys**
 
-    1. Go to [https://cloud.ibm.com/iam/#/apikeys](https://cloud.ibm.com/iam/#/apikeys) after login to IBM Cloud.
+    1. Go to [https://cloud.ibm.com/iam#/users](https://cloud.ibm.com/iam#/users) after login to IBM Cloud.
     2. Navigate to **Users**, click your name from the list and select the **User details** option.
     3. Click **Create an IBM Cloud API key** window.
     3. Enter the **Name** and **Description** for the new API Key.
