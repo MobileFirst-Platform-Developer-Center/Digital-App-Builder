@@ -42,7 +42,8 @@ Workbench helps you to design the pages. Workbench consists of three work areas:
         ![Databound controls](dab-workbench-databound-controls.png)
 
         * **List** - Create a new page and drag and drop the List component. Add the **List Title**, Choose the list type to work on, Add content to work on, and select the dataset to use.
-        * **Connected Labels** - You can add the connected labels and add value to it.
+
+
     * **Login** - Login consists of the **Login Form** control. Drag and drop the login form to the page.
  
         The Login Form control helps you to create a login page for your application to connect the user to the Mobile Foundation server. Mobile Foundation server provides a security framework to authenticate users and provide that security context to access the data sets. For more information read [here](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/authentication-and-security/creating-a-security-check/).
