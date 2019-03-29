@@ -15,3 +15,7 @@ show_children: true
 * Digital App Builder crashes when you create a page name with a number.
 
     Do not use numbers in a page name.
+
+* Camera in Watson Visual Recognition control will not work in web platform because of known issue in camera cordova plugin.
+ 
+    Known bug in cordova camera plugin. For more information, visit [cordova camera plugin known issue](https://github.com/apache/cordova-plugin-camera/issues/399).

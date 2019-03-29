@@ -16,7 +16,7 @@ show_children: true
 
 * Failure to create a Data set for a Microservice using a swagger file.
 
-    For the first time users of the Builder, the microservice creation may fail due to network letency.
+    For the first time users of the Builder, the microservice creation may fail due to network latency.
     To get rid of this, follow these steps:
     1. Open command prompt and go to the installed location of the app.
     2. `cd ibm\adapterGenerator`
