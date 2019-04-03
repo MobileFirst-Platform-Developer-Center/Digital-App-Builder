@@ -21,11 +21,11 @@ System requirements for IBM Digital App Builder includes operating systems, othe
 
 * Software requirements (**Prerequisites**) for using the Digital App Builder:
 
-    * Node Package Manager (npm)
-    * Cordova
-    * Ionic
+    * Node Package Manager (npm) (Node.js 8.x or above)
+    * Cordova 8.0.0 or more
+    * Ionic 4.2.0 or more
     * CocoaPods (MacOS only)
-    * Android Studio (To preview the app on Android emulator)
+    * Android Studio 2.x.x or above (To preview the app on Android emulator)
 
 * Requirements for previewing the app:
 
@@ -39,7 +39,7 @@ System requirements for IBM Digital App Builder includes operating systems, othe
 * Other requirements for using various services
 
     * [IBM Cloud account](https://cloud.ibm.com/registration)
-    * [Mobile Foundation](https://cloud.ibm.com/catalog/services/mobile-foundation) Server account (Mobile Foundation service on IBM Cloud, or Mobile Foundation v8 on ICP).
+    * [Mobile Foundation](https://cloud.ibm.com/catalog/services/mobile-foundation) Server account (on-prem or cloud).
     * [IBM Watson Assistant](https://cloud.ibm.com/catalog/services/watson-assistant) service account (for adding Chat service to the app)
     * [IBM Watson Visual Recognition](https://cloud.ibm.com/developer/watson/starter-kits/watson-visual-recognition-basic) service account (for adding Visual recogntion service to the app)
     * [Push Notifications](https://cloud.ibm.com/catalog/services/push-notifications) service account (for enabling push notifications service in the app)

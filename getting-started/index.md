@@ -36,7 +36,7 @@ You can create a new app by clicking **Create new app** icon from the Builder da
     * **iOS**: Select this option if you are creating an iOS app.
         >**Note**: You can build and run the iOS apps only on MacOS.
     * **Web**: Select this option if you are creating the app for the Web.
-    * **PWA**: Select this option if you are creating an Progressive Web App.
+    * **PWA**: Select this option if you are creating a Progressive Web App.
 
 3. The **Select type of server to connect to** window is displayed.
 
@@ -90,5 +90,5 @@ You can open an existing app in one of the following ways:
 ## Using templates
 {: #using-templates }
 
-You can use templates to quickly build your application. These are specific feature enabled app templates that will help you to quickly modify and develop the app.
+You can use templates to quickly build your application. These are specific feature enabled app templates that will help you to quickly modify and develop the app. Only Watson chatbot available as of now.
 

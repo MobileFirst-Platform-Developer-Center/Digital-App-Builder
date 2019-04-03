@@ -8,11 +8,15 @@ show_children: true
 # Troubleshooting
 {: #troubleshooting }
 
-* In case of any error, refer to the `log.log` file for the respective platform folder path below:
+* In case of any error, refer to:
 
-    * On mac OS: `~/Library/Logs/IBM Digital App Builder/log.log`.
-    * On Windows: `%USERPROFILE%\AppData\Roaming\IBM Digital App Builder\log.log`.
+    * `log.log` file for the respective platform folder path:
 
+        * On mac OS: `~/Library/Logs/IBM Digital App Builder/log.log`.
+
+        * On Windows: `%USERPROFILE%\AppData\Roaming\IBM Digital App Builder\log.log`.
+
+    * `applog.log` for your app related logs which can be found in `<APP LOCATION>/ibm/applog.log`.
 
 * Failure to create a Data set for a Microservice using a swagger file.
 
@@ -23,7 +27,7 @@ show_children: true
     3. Run the following command
         `windows> execute.bat .`
         `mac>./execute.sh .`
-    4. On successful complication of the above command, you can start using microservice (swagger file) from the Digital App Builder.
+    4. On successful execution of the above command, you can start using microservice (swagger file) from the Digital App Builder.
 
 * Failure to preview the app on Windows.
 
@@ -51,6 +55,7 @@ show_children: true
     Ideally all the Maven dependencies if does not exists are downloaded and installed behind the scene. But there are somecases where Maven fails because of multiple Maven versions in the system. To solve this issue follow these steps:
 
     a. Go to the Aa\pp location and open execute.sh / execute.bat file depending on the OS. (`<APP_LOCATION>\ibm\adapterGenerator`)
+
     b. Edit all the `call %MAVEN_HOME% clean install` to `call %MAVEN_HOME% -U clean install`.
 
         Adding `-U` will force maven to check any external dependencies that need to be updated based on the POM file.

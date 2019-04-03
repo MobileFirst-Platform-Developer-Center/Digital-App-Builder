@@ -38,7 +38,7 @@ You can install the Digital App Builder on MacOS and Windows platform.
 
     >**Note**: If you are facing any permission issues in running `$ npm install -g ionic` command, install using elevated previleges (`$ sudo npm install -g ionic`).
 
-4. Download the .dmg (**IBM.Digital.App.Builder-n.nn.n.dmg**) from [here](https://github.com/MobileFirst-Platform-Developer-Center/Digital-App-Builder/releases) or from [IBM passport advantage](https://www.ibm.com/software/passportadvantage/???).
+4. Download the .dmg (**IBM.Digital.App.Builder-8.0.0.dmg**) from [IBM passport advantage](https://www.ibm.com/software/passportadvantage/) or from [here](https://github.com/MobileFirst-Platform-Developer-Center/Digital-App-Builder/releases).
 5. Double click on .dmg file to mount the installer.
 6. In the window that the installer opens, drag and drop the IBM Digital App Builder to the **Applications** folder.
 7. Double click the IBM Digital App Builder icon or executable to open the Digital App Builder.
@@ -74,8 +74,8 @@ Run the following commands from the command prompt opened in administrative mode
     4.2.0
     ``` 
 
-4. [Download](https://github.com/MobileFirst-Platform-Developer-Center/Digital-App-Builder/releases) the Digital App Builder installation file (**IBM.Digital.App.Builder.Setup.n.nn.n.exe**) or from [IBM passport advantage](https://www.ibm.com/software/passportadvantage/???).
-5. Double click the Digital App Builder executable to install. A short cut is also created in the **Start > Programs** in the desktop. The default installation folder is `<AppData>\Local\IBMDigitalAppBuilder\app-n.nn.n`.
+4. Download the .exe (**IBM.Digital.App.Builder.Setup.8.0.0.exe**) from [IBM passport advantage](https://www.ibm.com/software/passportadvantage/) or from [here](https://github.com/MobileFirst-Platform-Developer-Center/Digital-App-Builder/releases).
+5. Double click the Digital App Builder executable to install. A short cut is also created in the **Start > Programs** in the desktop. The default installation folder is `<AppData>\Local\IBMDigitalAppBuilder\app-8.0.0`.
 >**Note**: When the Digital App Builder is installed for the first time, the Digital App Builder opens up the interface and performs a [Prerequisites Check](#prerequisites-check). In case of any error, rectify the error and restart the Digital App Builder before creating an application.
 
 ## Prerequisites Check
