@@ -2,7 +2,7 @@
 
 Thank you for your interest in the **IBM Digital App Builder**.
 
-By downloading IBM Digital App Builder, you confirm that (1) you have had the opportunity to review the License Information document [here](https://www-03.ibm.com/software/sla/sladb.nsf/sla/home?OpenDocument) for **IBM Digital App Builder 8.0** and (2) you agree to its License Information.
+By downloading IBM Digital App Builder, you confirm that (1) you have had the opportunity to review the License Information document [here](https://www-03.ibm.com/software/sla/sladb.nsf/sla/home?OpenDocument) for **IBM Digital App Builder v8.0** and (2) you agree to its License Information.
 
 You should not download and use **IBM Digital App Builder** if you do not agree to its License Information.
 
